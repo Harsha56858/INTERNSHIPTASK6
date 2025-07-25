@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #ffffff);
+  color: #2D3B36;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #2D3B36;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form Fields */
+form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2D3B36;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(45, 59, 54, 0.2);
+}
+
+/* Submit Button */
+form button {
+  margin-top: 30px;
+  background-color: #2D3B36;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #1e2924;
+  transform: translateY(-2px);
+}
+
+/* Error & Success Messages */
+.error-msg {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #e74c3c;
+  line-height: 1.5;
+}
+
+.success-msg {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #2ecc71;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background-color: #eee;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  .form-container {
+    padding: 25px;
+    margin: 20px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 15px;
+  }
+
+  form button {
+    font-size: 15px;
+  }
+}
